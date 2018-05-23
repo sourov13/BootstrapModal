@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Day 28</title>
+</head>
+<body>
+<br/>
+    <div class="container">
+    <!--Modal practice-->
+        <div class="row">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-info" data-target="#myModal" data-toggle="modal">Check Offer</button>
+
+            </div>
+        </div>
+
+        <br/>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <span class="badge badge-light">Today is Wednesday</span>
+                <span class="badge badge-secondary">Today is Wednesday</span>
+                <span class="badge badge-danger">Today is Wednesday</span>
+                <span class="badge badge-warning">Today is Wednesday</span>
+                <span class="badge badge-success">Today is Wednesday</span>
+                <span class="badge badge-info">Today is Wednesday</span>
+            </div>
+
+            <div>
+                <!--Round shape badge-->
+                <span class="badge badge-light badge-pill">Today is Wednesday</span>
+                <span class="badge badge-secondary badge-pill">Today is Wednesday</span>
+                <span class="badge badge-danger badge-pill">Today is Wednesday</span>
+                <span class="badge badge-warning badge-pill">Today is Wednesday</span>
+                <span class="badge badge-success badge-pill">Today is Wednesday</span>
+                <span class="badge badge-info badge-pill">Today is Wednesday</span>
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary">Message <sup><span class="badge badge-info badge-pill">10</span></sup></button>
+        </div>
+
+        <div>
+            <h1>Today is Wednesday <span class="badge badge-info">New</span></h1>
+            <h1>Tomorrow is Thursday <span class="badge badge-success">New</span></h1>
+            <h1>Yesterday was Tuesday <span class="badge badge-danger">New</span></h1>
+
+        </div>
+
+
+        <br/>
+        <div class="row">
+            <div class="col-md-4">
+                <!--Accordion-->
+                <div class="accordion" id="myAccordion">
+                <div class="card">
+                    <div class="card-header">
+                       <button type="button" class="btn btn-outline-info"  data-target="#cardOne" data-toggle="collapse" >Category</button>
+                    </div>
+                    <div id="cardOne" class="collapse" data-parent="#myAccordion">
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="">Item One</a></li>
+                                <li class="list-group-item"><a href="">Item Two</a></li>
+                                <li class="list-group-item"><a href="">Item Three</a></li>
+                                <li class="list-group-item"><a href="">Item Four</a></li>
+                            </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <button type="button" class="btn btn-outline-info"  data-target="#cardTwo" data-toggle="collapse" >Read More 1...</button>
+                    </div>
+                    <div id="cardTwo" class="collapse" data-parent="#myAccordion">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.</p>
+                            <p>Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <button type="button" class="btn btn-outline-info" data-parent="#myAccordion" data-target="#cardThree" data-toggle="collapse" >Read More 2....</button>
+                    </div>
+                    <div id="cardThree" class="collapse" data-parent="#myAccordion">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.</p>
+                            <p>Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--Modal Codes should be at the end -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Today Wednesday</h3>
+                <button type="button" data-dismiss="modal" class="close">x</button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque placeat tempora ut. Ad aliquam animi aperiam consectetur cumque expedita fuga laboriosam, necessitatibus quaerat quibusdam reprehenderit vero? Facilis incidunt ullam ut.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque placeat tempora ut. Ad aliquam animi aperiam consectetur cumque expedita fuga laboriosam, necessitatibus quaerat quibusdam reprehenderit vero? Facilis incidunt ullam ut.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning text-left" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
